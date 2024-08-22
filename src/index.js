@@ -6,7 +6,7 @@ const weatherDisplay = document.querySelector('.weather');
 document.querySelector('.searchBtn')
     .addEventListener('click', () => {
         const cityName = document.querySelector('.city').value;
-        const apiKey  = '4c9f147f87b2a4aac7844d9e8a4b0a30'
+        const apiKey  = '#####'
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
         fetch(url)
