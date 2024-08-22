@@ -20,10 +20,10 @@ document.querySelector('.searchBtn')
             .then(data => {
                 const weatherInfo = 
                 `<h2>${data.name}, ${data.sys.country}</h2>
-                <p>Temperature: ${data.main.temp}°C</p>
-                <p>Weather: ${data.weather[0].description}</p>
-                <p>Humidity: ${data.main.humidity}%</p>
-                <p>Wind Speed: ${data.wind.speed} m/s</p>`;
+                <p>Temperature : ${data.main.temp}°C</p>
+                <p>Weather : ${data.weather[0].description}</p>
+                <p>Humidity : ${data.main.humidity}%</p>
+                <p>Wind Speed : ${data.wind.speed} m/s</p>`;
 
                 document.querySelector('.weather').innerHTML = weatherInfo;
             })
